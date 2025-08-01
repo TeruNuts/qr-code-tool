@@ -1,0 +1,57 @@
+  name: 🐛 バグ報告
+  description: バグを報告して改善にご協力ください
+  title: "[BUG] "
+  labels: ["bug"]
+  assignees: []
+  body:
+    - type: markdown
+      attributes:
+        value: |
+          バグ報告をありがとうございます！以下の項目をご記入ください。
+
+    - type: textarea
+      id: bug-description
+      attributes:
+        label: 🐛 バグの概要
+        description: 発生したバグについて簡潔に説明してください
+        placeholder: バグの詳細を記載してください...
+      validations:
+        required: true
+
+    - type: textarea
+      id: reproduction-steps
+      attributes:
+        label: 🔄 再現手順
+        description: バグを再現するための手順を記載してください
+        placeholder: |
+          1. '...' にアクセスする
+          2. '...' をクリックする
+          3. エラーが発生する
+      validations:
+        required: true
+
+    - type: textarea
+      id: expected-behavior
+      attributes:
+        label: ✅ 期待される動作
+        description: 期待していた動作について説明してください
+      validations:
+        required: true
+
+    - type: textarea
+      id: environment
+      attributes:
+        label: 📱 動作環境
+        description: OS、ブラウザ、バージョンなどを記載してください
+        placeholder: |
+          - OS: Windows 11
+          - ブラウザ: Chrome 120.0.0.0
+          - デバイス: デスクトップ
+      validations:
+        required: true
+
+    - type: textarea
+      id: additional-context
+      attributes:
+        label: 🔗 追加情報
+        description: その他の情報やスクリーンショットがあれば追加してください
