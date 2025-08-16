@@ -11,6 +11,32 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+	    {
+      rules: {
+        // 未使用変数・import のエラー化
+        "no-unused-vars": "error",
+        "@typescript-eslint/no-unused-vars": "error",
+
+        // コンソール使用の警告
+        "no-console": "warn",
+
+        // モダンなJavaScript推奨
+        "prefer-const": "error",
+        "no-var": "error",
+
+        // TypeScript型安全性
+        "@typescript-eslint/explicit-function-return-type": "warn",
+        "@typescript-eslint/no-explicit-any": "warn",
+
+        // React/Next.js ベストプラクティス
+        "react/jsx-key": "error",
+        "react/no-unescaped-entities": "warn",
+
+        // コード品質
+        "eqeqeq": "error", // === 強制
+        "curly": "error"   // 中括弧強制
+      }
+    }
 ];
 
 export default eslintConfig;

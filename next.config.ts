@@ -1,7 +1,8 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Docker最適化設定
+  output: 'standalone',
 };
 
 export default nextConfig;
