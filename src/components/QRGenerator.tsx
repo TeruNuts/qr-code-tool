@@ -13,9 +13,7 @@ interface QRGeneratorProps {
  * QR Code Generator Component
  * Generates QR codes from text input with error handling and loading states
  */
-export default function QRGenerator({
-  className = '',
-}: QRGeneratorProps): JSX.Element {
+export default function QRGenerator({ className = '' }: QRGeneratorProps) {
   const [text, setText] = useState<string>('');
   const [qrDataURL, setQrDataURL] = useState<string>('');
   const [isGenerating, setIsGenerating] = useState<boolean>(false);
