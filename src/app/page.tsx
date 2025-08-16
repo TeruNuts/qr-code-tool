@@ -5,7 +5,7 @@ import QRGenerator from '@/components/QRGenerator';
  * Home Page Component
  * Main landing page featuring the QR Code Generator
  */
-export default function Home(): JSX.Element {
+export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
       {/* Hero Section */}
